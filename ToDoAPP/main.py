@@ -3,6 +3,7 @@ from .models import Base
 from .database import engine
 from .routers import auth, todos, admin, users
 
+# TODOAPP project
 app = FastAPI()
 
 Base.metadata.create_all(bind=engine)
